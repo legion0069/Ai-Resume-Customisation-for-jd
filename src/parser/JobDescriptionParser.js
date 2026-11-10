@@ -92,3 +92,4 @@ class JobDescriptionParser {
 }
 
 module.exports = { JobDescriptionParser };
+

@@ -152,3 +152,4 @@ class ResumeOptimizer {
 }
 
 module.exports = { ResumeOptimizer };
+

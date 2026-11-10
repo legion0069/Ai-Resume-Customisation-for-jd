@@ -2,7 +2,7 @@
 
 [![Daily Automation](https://img.shields.io/badge/Daily%20Cron-10%3A30%20AM%20IST-brightgreen?style=for-the-badge&logo=clockify)](https://console.cron-job.org/jobs)
 [![Roadmap](https://img.shields.io/badge/Roadmap-30%20Days%20Autonomous-blue?style=for-the-badge&logo=target)](https://legion0069.github.io/Automation/)
-[![Commits Per Day](https://img.shields.io/badge/Commits-4%2Fday-purple?style=for-the-badge&logo=git)](https://github.com/legion0069/AI-Resume-Optimization-Agent/actions)
+[![Commits Per Day](https://img.shields.io/badge/Commits-4%2Fday-purple?style=for-the-badge&logo=git)](https://github.com/legion0069/Ai-Resume-Customisation-for-jd/actions)
 [![Live Dashboard](https://img.shields.io/badge/Live%20Dashboard-Automation-orange?style=for-the-badge&logo=github)](https://legion0069.github.io/Automation/)
 
 > **Autonomous AI-Powered Resume Optimization Engine**: Ingests candidate component pools (projects, internship experiences, work history, technical skills), evaluates target Job Descriptions (JDs), computes semantic compatibility match scores, presents an interactive checklist for component selection, and finalizes tailored, high-converting ATS-optimized resumes.
@@ -32,7 +32,7 @@ flowchart TD
 To bypass GitHub Actions scheduling queue delays, this repository uses an external trigger configured via **[cron-job.org](https://console.cron-job.org/jobs)**:
 
 - **Schedule**: **Daily at 10:30 AM IST (10:30 IST / 05:00 UTC)**
-- **Target Endpoint**: `https://api.github.com/repos/legion0069/AI-Resume-Optimization-Agent/actions/workflows/daily-streak.yml/dispatches`
+- **Target Endpoint**: `https://api.github.com/repos/legion0069/Ai-Resume-Customisation-for-jd/actions/workflows/daily-streak.yml/dispatches`
 - **Method**: `POST`
 - **Payload**: `{"ref": "main"}`
 - **Frequency**: 4 commits executed daily across 30 days.
@@ -89,8 +89,8 @@ To bypass GitHub Actions scheduling queue delays, this repository uses an extern
 
 ### Installation
 ```bash
-git clone https://github.com/legion0069/AI-Resume-Optimization-Agent.git
-cd AI-Resume-Optimization-Agent
+git clone https://github.com/legion0069/Ai-Resume-Customisation-for-jd.git
+cd Ai-Resume-Customisation-for-jd
 npm install
 ```
 
@@ -114,7 +114,7 @@ npm run streak
 ## 🏛️ Project Architecture
 
 ```
-AI-Resume-Optimization-Agent/
+Ai-Resume-Customisation-for-jd/
 ├── .github/
 │   └── workflows/
 │       └── daily-streak.yml         # GitHub Actions workflow (10:30 AM IST)
@@ -147,3 +147,4 @@ AI-Resume-Optimization-Agent/
 
 ## 📜 License
 Licensed under the [MIT License](LICENSE).
+

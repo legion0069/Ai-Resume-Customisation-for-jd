@@ -1,5 +1,5 @@
 /**
- * AI-Resume-Optimization-Agent — Autonomous Daily Streak Runner (GitStreak Engine)
+ * Ai-Resume-Customisation-for-jd — Autonomous Daily Streak Runner (GitStreak Engine)
  * Runs daily at 10:30 AM IST (10:30 IST / 05:00 UTC)
  * Executes 4 semantic commits per day across models, parsers, engines, matchers, renderers, tests, and specs.
  */
@@ -352,7 +352,7 @@ async function main() {
     console.log(`🤖 Prompting Google Gemini AI to craft code for Day ${currentDay}...`);
     try {
       const prompt = `You are a Principal Software Engineer specializing in ATS Resume Optimization and NLP.
-Generate exactly ${COMMITS_PER_DAY} distinct, production-ready git commits for Day ${currentDay} of ${totalDays} of project "AI-Resume-Optimization-Agent".
+Generate exactly ${COMMITS_PER_DAY} distinct, production-ready git commits for Day ${currentDay} of ${totalDays} of project "Ai-Resume-Customisation-for-jd".
 Today's Objective: "${dayMilestone}"
 
 Requirements:
@@ -394,7 +394,7 @@ Requirements:
   // Fallback to resilient code generator if AI did not return commits
   if (!generatedCommits || !Array.isArray(generatedCommits) || generatedCommits.length === 0) {
     generatedCommits = generateResilientDayCode({
-      projectName: state.projectName || 'AI-Resume-Optimization-Agent',
+      projectName: state.projectName || 'Ai-Resume-Customisation-for-jd',
       dayNumber: currentDay,
       totalDays: totalDays,
       milestone: dayMilestone,
@@ -493,3 +493,4 @@ main().catch(err => {
   console.error('❌ Streak runner fatal error:', err);
   process.exit(1);
 });
+

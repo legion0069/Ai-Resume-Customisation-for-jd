@@ -32,7 +32,7 @@ jobs:
   run-streak:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout AI-Resume-Optimization-Agent repository
+      - name: Checkout Ai-Resume-Customisation-for-jd repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -62,9 +62,9 @@ jobs:
           PAT_TOKEN: ${{ secrets.PAT_TOKEN || secrets.GH_PAT }}
         run: |
           if [ -z "$PAT_TOKEN" ]; then
-            echo "ℹ️ PAT_TOKEN secret is not set in AI-Resume-Optimization-Agent repository."
-            echo "ℹ️ The UI at https://legion0069.github.io/Automation/ will still display live data directly from AI-Resume-Optimization-Agent."
-            echo "ℹ️ To also push an automated commit to Automation repo, add PAT_TOKEN to AI-Resume-Optimization-Agent Settings > Secrets > Actions."
+            echo "ℹ️ PAT_TOKEN secret is not set in Ai-Resume-Customisation-for-jd repository."
+            echo "ℹ️ The UI at https://legion0069.github.io/Automation/ will still display live data directly from Ai-Resume-Customisation-for-jd."
+            echo "ℹ️ To also push an automated commit to Automation repo, add PAT_TOKEN to Ai-Resume-Customisation-for-jd Settings > Secrets > Actions."
             exit 0
           fi
 
@@ -77,13 +77,14 @@ jobs:
           git clone "https://x-access-token:${PAT_TOKEN}@github.com/legion0069/Automation.git" /tmp/automation-repo
 
           # Sync .gitstreak state
-          mkdir -p /tmp/automation-repo/data/ai-resume-optimization-agent
-          cp .gitstreak/state.json /tmp/automation-repo/data/ai-resume-optimization-agent/state.json
+          mkdir -p /tmp/automation-repo/data/ai-resume-customisation-for-jd
+          cp .gitstreak/state.json /tmp/automation-repo/data/ai-resume-customisation-for-jd/state.json
 
           # Commit and push to Automation
           cd /tmp/automation-repo
           git add .
-          CURRENT_DAY=$(node -e "try { console.log(require('./data/ai-resume-optimization-agent/state.json').currentDay) } catch { console.log('') }")
-          git commit -m "chore(sync): sync AI-Resume-Optimization-Agent Day ${CURRENT_DAY} progress" || echo "No changes to commit in Automation"
+          CURRENT_DAY=$(node -e "try { console.log(require('./data/ai-resume-customisation-for-jd/state.json').currentDay) } catch { console.log('') }")
+          git commit -m "chore(sync): sync Ai-Resume-Customisation-for-jd Day ${CURRENT_DAY} progress" || echo "No changes to commit in Automation"
           git push origin main || echo "Push to Automation skipped"
           echo "🎉 Automation repository and UI successfully updated!"
+

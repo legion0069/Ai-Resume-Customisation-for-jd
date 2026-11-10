@@ -218,3 +218,4 @@ class ResumeRenderer {
 }
 
 module.exports = { ResumeRenderer };
+

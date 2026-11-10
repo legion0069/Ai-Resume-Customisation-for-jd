@@ -1,5 +1,5 @@
 {
-  "name": "ai-resume-optimization-agent",
+  "name": "ai-resume-customisation-for-jd",
   "version": "1.0.0",
   "description": "Autonomous AI Resume Optimization Agent — Ingests candidate component pools (projects, internships, skills), analyzes job descriptions (JDs), computes semantic compatibility match scores, provides interactive selection checklists, and finalizes ATS-optimized customized resumes.",
   "main": "src/cli.js",
@@ -20,3 +20,4 @@
   "license": "MIT",
   "dependencies": {}
 }
+
