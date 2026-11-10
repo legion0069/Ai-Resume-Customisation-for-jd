@@ -1,0 +1,22 @@
+{
+  "name": "ai-resume-optimization-agent",
+  "version": "1.0.0",
+  "description": "Autonomous AI Resume Optimization Agent — Ingests candidate component pools (projects, internships, skills), analyzes job descriptions (JDs), computes semantic compatibility match scores, provides interactive selection checklists, and finalizes ATS-optimized customized resumes.",
+  "main": "src/cli.js",
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "node tests/resumeOptimizer.test.js",
+    "streak": "node scripts/streak-runner.js"
+  },
+  "keywords": [
+    "ai",
+    "resume-optimization",
+    "ats-optimizer",
+    "job-description-parser",
+    "semantic-matching",
+    "career-agent"
+  ],
+  "author": "legion0069",
+  "license": "MIT",
+  "dependencies": {}
+}
