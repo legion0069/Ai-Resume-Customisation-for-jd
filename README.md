@@ -46,7 +46,7 @@ To bypass GitHub Actions scheduling queue delays, this repository uses an extern
 - [x] **Day 2**: Candidate Component Repository Engine & CRUD Store
 - [x] **Day 3**: Bullet-Point Action Verb & STAR Impact Metric Normalizer
 - [x] **Day 4**: Skills Taxonomy & Technical Hierarchy Engine
-- [ ] **Day 5**: Candidate Profile Import/Export & Multi-Format Ingestion
+- [x] **Day 5**: Candidate Profile Import/Export & Multi-Format Ingestion
 
 ### Phase 2: Job Description Analysis & Semantic Matcher (Days 6–10)
 - [ ] **Day 6**: Job Description (JD) NLP Parser & Requirement Extractor
