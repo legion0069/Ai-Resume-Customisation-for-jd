@@ -64,7 +64,7 @@ To bypass GitHub Actions scheduling queue delays, this repository uses an extern
 - [x] **Day 16**: Profile Pool vs. Tailored Resume Diff & Delta Inspector
 
 ### Phase 4: AI Bullet Tailoring & Optimization (Days 17–21)
-- [ ] **Day 17**: Project & Experience Bullet-Point Rephraser
+- [x] **Day 17**: Project & Experience Bullet-Point Rephraser
 - [ ] **Day 18**: Quantifiable Metric & Business Impact Enhancer
 - [ ] **Day 19**: Role-Specific Technical Acronym & Nomenclature Harmonizer
 - [ ] **Day 20**: Tailored Cover Letter Synthesis Engine
